@@ -41,7 +41,7 @@ export function Header() {
                 <input
                   type="text"
                   placeholder="Search Sports & Related Experiences..."
-                  className="w-full pl-4 pr-12 py-3 rounded-full bg-white border-none text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full pl-4 pr-12 py-3 rounded-full bg-white border-none text-black placeholder:text-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
                 <button className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 bg-transparent flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
                   <Search className="h-5 w-5" />
