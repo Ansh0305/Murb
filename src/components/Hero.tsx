@@ -30,7 +30,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative pt-20 pb-8 bg-background overflow-hidden">
+    <section className="relative pt-28 pb-8 bg-background overflow-hidden">
       {/* Main Carousel Area */}
       <div className="container mx-auto px-6">
         <motion.div

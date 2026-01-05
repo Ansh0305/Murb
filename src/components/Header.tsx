@@ -21,27 +21,24 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Main Header with Tan Background like Murb.in */}
       <div className="bg-primary">
-        <div className="container mx-auto px-6 py-3">
-          <div className="flex items-center justify-between gap-4">
+        <div className="container mx-auto px-14 py-3">
+          <div className="flex items-center justify-between gap-3">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 shrink-0">
+            <Link to="/" className="flex items-center shrink-0">
               <img
                 src="/logo.png"
                 alt="Murb Logo"
-                className="w-10 h-10 rounded-full object-cover"
+                className="h-24 w-24 -my-3 object-contain"
               />
-              <span className="font-display text-xl font-bold text-white hidden sm:block">
-                MURB
-              </span>
             </Link>
 
             {/* Search Bar - Desktop */}
-            <div className="hidden md:flex flex-1 max-w-xl mx-8">
+            <div className="hidden md:flex flex-1 max-w-lg mx-4 lg:mx-6">
               <div className="relative w-full">
                 <input
                   type="text"
                   placeholder="Search Sports & Related Experiences..."
-                  className="w-full pl-4 pr-12 py-3 rounded-full bg-white border-none text-black placeholder:text-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="w-full pl-4 pr-12 py-2 rounded-full bg-white border-none text-black placeholder:text-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
                 <button className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 bg-transparent flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors">
                   <Search className="h-5 w-5" />
