@@ -30,17 +30,19 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-secondary/50 border-t border-border">
+    <footer style={{ backgroundColor: '#C3996B' }}>
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-6">
-              <span className="font-display text-2xl font-bold text-foreground">
-                MURB
-              </span>
+              <img
+                src="/footerLogo.png"
+                alt="Murb Logo"
+                className="h-[82px] w-[82px] object-contain"
+              />
             </Link>
-            <p className="text-muted-foreground mb-6 max-w-sm">
+            <p className="text-white/80 mb-6 max-w-sm">
               Performance sportswear engineered for athletes who push beyond limits.
               Every piece designed for peak performance.
             </p>
@@ -52,7 +54,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
+                  className="w-10 h-10 rounded-full bg-white/20 border border-white/30 flex items-center justify-center text-white hover:bg-white hover:text-[#C3996B] transition-all duration-300"
                 >
                   <social.icon className="h-5 w-5" />
                 </a>
@@ -62,13 +64,13 @@ export function Footer() {
 
           {/* Links */}
           <div>
-            <h3 className="font-display text-lg font-semibold text-foreground mb-4">Shop</h3>
+            <h3 className="font-display text-lg font-semibold text-white mb-4">Shop</h3>
             <ul className="space-y-3">
               {footerLinks.shop.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-white/80 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -78,13 +80,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-lg font-semibold text-foreground mb-4">Support</h3>
+            <h3 className="font-display text-lg font-semibold text-white mb-4">Support</h3>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-white/80 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -94,13 +96,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-display text-lg font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="font-display text-lg font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-white/80 hover:text-white transition-colors"
                   >
                     {link.name}
                   </Link>
@@ -111,13 +113,13 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
+        <div className="border-t border-white/30 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-white/80">
             © 2024 Murb. All rights reserved.
           </p>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <Link to="/shop" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link to="/shop" className="hover:text-primary transition-colors">Terms of Service</Link>
+          <div className="flex gap-6 text-sm text-white/80">
+            <Link to="/shop" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/shop" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
