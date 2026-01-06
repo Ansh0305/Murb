@@ -75,12 +75,12 @@ export function FeaturedProducts() {
                     />
 
                     {/* Category Badge - Top Right */}
-                    <span className="absolute top-3 right-3 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="absolute top-3 right-3 bg-white text-indigo-600 px-3 py-1 rounded-full text-xs font-medium">
                       {product.category}
                     </span>
 
                     {/* Live Badge - Bottom Right */}
-                    <span className="absolute top-3 left-3 bg-primary/90 text-primary-foreground px-2 py-0.5 rounded text-xs font-medium">
+                    <span className="absolute top-3 left-3 bg-white text-indigo-600 px-2 py-0.5 rounded text-xs font-medium">
                       Live
                     </span>
                   </div>
@@ -93,13 +93,13 @@ export function FeaturedProducts() {
                     </h3>
 
                     {/* Location/Description */}
-                    <div className="flex items-start gap-2 text-muted-foreground text-sm mb-3">
+                    <div className="flex items-start gap-2 text-black text-sm mb-3">
                       <MapPin className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                       <span className="line-clamp-2">{product.description.slice(0, 60)}...</span>
                     </div>
 
                     {/* Slots indicator */}
-                    <div className="flex items-center gap-1 text-xs text-primary mb-3">
+                    <div className="flex items-center gap-1 text-xs text-black mb-3">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full animate-pulse"></span>
                       <span>{Math.floor(Math.random() * 5000 + 1000)} slots</span>
                     </div>
@@ -136,6 +136,7 @@ export function FeaturedProducts() {
         >
           <Button
             className="rounded-full px-8"
+            style={{ backgroundColor: '#000000' }}
             asChild
           >
             <Link to="/shop">
